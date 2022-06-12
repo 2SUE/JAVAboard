@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ENC(+ud/b5nxwT4tND5iq2cXCq17N7Nl3PYNRHqu07Az2mOiebMfsA706+M6z3Usf6/s7ZDsnO3ivsxpy0j4Qai0kjNBIVdcrVi7WFQUy1LC8i8Sq6wEAxpMu0f2j8IVQ5y4)
+    username: ENC(Bak4VhteWKIAUlg6ghgVgg==)
+    password: ENC(w1cA5vQqnxrfEdQXbEM0TQ==)
+
+mybatis:
+  type-aliases-package: com.board.backend.model
+  mapper-locations: mybatis-mapper/*.xml
+
+jasypt:
+  encryptor:
+    bean: jasyptStringEncryptor
+    password: 2SUE
+
+pw: ENC(w1cA5vQqnxrfEdQXbEM0TQ==)

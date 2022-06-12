@@ -1,0 +1,65 @@
+@use './../board.scss' as n;
+
+.noticeList {
+    display: flex;
+    flex-direction: column;
+    margin-top: 7%;
+
+    &-head {
+        display: flex;
+        width: 90vw;
+        max-width: 1000px;
+        justify-content: space-between;
+    }
+
+    &-items {
+        width: 90vw;
+        max-width: 1000px;
+
+        table {
+            width: 100%;
+            margin-top: 10px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        table, td {
+            @include n.border-top(1);
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 8px 0;
+        }
+
+        td:nth-child(2) {
+            width: 70%;
+        }
+
+        &-page {
+            @include n.border-bottom(1);
+
+            a {
+                padding: 0 3px;
+            }
+
+            &-active {
+                color: #F74512 !important;
+            }
+        }
+    }
+}
+
+.delete {
+    background: n.$light-gray;
+}
+
+@media screen and (max-width: 660px) {
+    .noticeList {
+        margin-top: 0;
+    }
+    
+    td:nth-child(2) {
+        width: 85% !important;
+    }
+}
